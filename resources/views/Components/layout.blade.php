@@ -35,21 +35,18 @@
                                     <x-nav-link
                                         href="/"
                                         :active="request()->is('/')"
-                                        type="button"
                                     >
                                         Home
                                     </x-nav-link>
                                     <x-nav-link
-                                        href="/about"
-                                        :active="request()->is('about')"
-                                        type="button"
+                                        href="/jobs"
+                                        :active="request()->is('jobs')"
                                     >
-                                        About
+                                        Jobs
                                     </x-nav-link>
                                     <x-nav-link
                                         href="/contact"
                                         :active="request()->is('contact')"
-                                        type="a"
                                     >
                                         Contact
                                     </x-nav-link>
@@ -168,7 +165,7 @@
                             Home
                         </a>
                         <a
-                            href="/about"
+                            href="/jobs"
                             class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                         >
                             About
