@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home page</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        @vite(["resources/js/app.js"])
     </head>
     <body class="h-full">
         <!--
@@ -82,7 +82,7 @@
                             <!-- Mobile menu button -->
                             <button
                                 type="button"
-                                class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+                                class="focus:outline-hidden relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                 aria-controls="mobile-menu"
                                 aria-expanded="false"
                             >
@@ -127,7 +127,7 @@
 
                 <!-- Mobile menu, show/hide based on menu state. -->
                 <div class="md:hidden" id="mobile-menu">
-                    <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                    <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <a
                             href="/"
@@ -149,7 +149,7 @@
                             Contact
                         </a>
                     </div>
-                    <div class="border-t border-gray-700 pt-4 pb-3">
+                    <div class="border-t border-gray-700 pb-3 pt-4">
                         <div class="flex items-center px-5">
                             <div class="shrink-0">
                                 <img
@@ -168,7 +168,7 @@
                             </div>
                             <button
                                 type="button"
-                                class="relative ml-auto shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+                                class="focus:outline-hidden relative ml-auto shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                             >
                                 <span class="absolute -inset-1.5"></span>
                                 <span class="sr-only">View notifications</span>
